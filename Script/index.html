@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background: #a09d9d;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2); 
+
+        }
+        header nav a{
+            margin-right: 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: 500ms ease-in-out;
+        }
+        header nav a:hover{
+            color: #000;
+            
+        }
+        .container{
+           max-width: 1200px;
+           margin : 0 auto;
+           padding: 20px;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .box{
+            background: #bebdbd;
+            flex: 1 1 300px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2); 
+        }
+        footer{
+            background: #a09d9d;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+        }
+        @media(max-width: 768px){
+            nav{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+            }
+            header{
+                flex-direction: column;
+                text-align: center;
+                font-size: 19px;
+            }
+            header nav a{
+                margin-top: 10px;
+            }
+
+        }
+
+    </style>
+    <title>Site do Vitor </title>
+</head>
+<body>
+    <header>
+       <p>Meu site</p>
+       <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Suporte</a>
+       </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="box">Conteúdo 1</div>
+            <div class="box">Conteúdo 2</div>
+            <div class="box">Conteúdo 3</div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Site do Vitor | Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
